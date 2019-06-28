@@ -106,49 +106,24 @@
   <div class="row" style="background: white">
 
 
-@foreach ($nota as $notas)
+@foreach ($notas as $nota)
 
 <div class="col">
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="..." width="30px" height="30px">
     <div class="card-body">
-      <h5 class="card-title">{{$notas->titulo}}</h5>
+      <h5 class="card-title">{{$nota->titulo}}</h5>
       <ul>
-        <li class="precio text-center"> {{$notas->epigrafe}}</li>
-        <li class="precio text-center"> {{$notas->entrada}}</li>
+        <li class="precio text-center"> {{$nota->epigrafe}}</li>
+        <li class="precio text-center"> {{$nota->entrada}}</li>
       </ul>
 
-      <a href="#" class="btn btn-primary">Leer Más</a>
+      <a href="notas/{{$nota->id}}" class="btn btn-primary">Leer Más</a>
     </div>
   </div>
+</div>
 </div>
 @endforeach
-
-    <!-- <div class="col">
-      <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-
- -->
-
 
 
  @endsection

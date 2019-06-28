@@ -33,7 +33,6 @@ $this->validate($req, [
 
 ]);
 
-
     $nuevaNota = new notas ();
     $nuevaNota->titulo = $req->input('titulo');
     $nuevaNota->epigrafe = $req->input('epigrafe');
@@ -45,6 +44,9 @@ $this->validate($req, [
     return view ('/nuevaNota');
 
   }
+
+
+
 
 
   }
