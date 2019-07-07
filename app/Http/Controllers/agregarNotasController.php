@@ -7,10 +7,7 @@ class agregarNotas extends Controller
 {
 
 
-  // Validaciones
-    // public function new(Request $req){
-    //
-    //   $this->validate($req,[])}
+
 
 public function agregar(Request $req){
     $nuevaNota = new notas ();
@@ -46,6 +43,23 @@ public function new(){
   ]);
 
 }
+
+// 
+//
+// public function edit($id){
+//   $notas = notas::find($id);
+//
+//
+//   return view('edit')->with([
+//       'titulo' => $titulo,
+//       'epigrafe' =>$epigrafe,
+//       'cuerpo' =>$cuerpo,
+//       'entrada' =>$entrada
+//     ]);
+
+}
+
+
 
 
 }

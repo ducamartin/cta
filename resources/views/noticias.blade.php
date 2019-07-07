@@ -16,5 +16,19 @@
       </ul>
     </div>
   </div>
+  <div class="botonBorrar">
+    <form class="" action="/borrarNota" method="post">
+      @csrf
+      <input type="hidden" name="id" value="{{$nota->id}}">
+    <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
+
+    </form>
+
+<p class="card-text">
+
+<a class="btn btn-primary" href="/notas/editar/{{$nota->id}}">Editar Nota</a>
+
+</p>
+</div>
 </div>
 @endforeach

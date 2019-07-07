@@ -18,6 +18,8 @@
 
 
 
+<a href="{{'/cd'}}">
+
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
       <div class="info col-md-8">
@@ -25,6 +27,7 @@
   <h2>Comisión Directiva</h2>
   </i>
 
+</a>
 <a href="http://ctanacional.org/dev/que-es-la-cta/">
   <i class="far fa-question-circle" id="dos">
   <br>
@@ -117,8 +120,23 @@
         <li class="precio text-center"> {{$nota->epigrafe}}</li>
         <li class="precio text-center"> {{$nota->entrada}}</li>
       </ul>
+<form class="" action="" method="post">
 
-      <a href="notas/{{$nota->id}}" class="btn btn-primary">Leer Más</a>
+@csrf
+<input type="hidden" name="id" value="noticias/{{$nota->id}}" >
+<input type="submit" name="" value="Ver Más"class="btn btn-primary">
+</form>
+      <div class="botonBorrar">
+        <form class="" action="/borrarNota" method="post">
+          @csrf
+          <input type="hidden" name="id" value="noticias/{{$nota->id}}">
+        <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
+
+        </form>
+
+      </div>
+    </div>
+
     </div>
   </div>
 </div>

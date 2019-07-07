@@ -2,8 +2,15 @@
 
 
 
+Route::get('/cd', 'ViewController@cd');
 
-Route::get('/notas/{id}', 'noticiasController@view');
+
+
+Route::post('/borrarNota', 'notasController@borrar');
+
+Route::post('/notas/editar/{id}','noticiasController@update');
+Route::get('/notas/editar/{id}','noticiasController@edit');
+
 Route::post('/nuevaNota','notasController@agregar');
 Route::get('/nuevaNota','notasController@vista');
 Route::get('/notas', 'noticiasController@index');

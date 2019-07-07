@@ -45,7 +45,12 @@ $this->validate($req, [
 
   }
 
-
+  public function borrar(Request $req){
+    $id = $req ['id'];
+    $notas = notas::find($id);
+    $notas->delete();
+    return redirect('/');
+  }
 
 
 

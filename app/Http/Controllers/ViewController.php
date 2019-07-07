@@ -20,6 +20,12 @@ class ViewController extends Controller
      return view('index')
      ->with([
        'notas' => $notas]);
-       
+
 }
+
+
+public function cd(){
+  return view ('comisionDirectiva');
+}
+
 }

@@ -12,11 +12,11 @@
             </li>
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">INSTITUCIONAL</a>
             <div class="dropdown-menu">
-                    <a class="dropdown-item" href="index.php">MESA NACIONAL</a>
+                    <a class="dropdown-item" href="{{'/cd'}}">MESA NACIONAL</a>
                     <a class="dropdown-item" href="#">CTA PROVINCIAS</a>
                     <a class="dropdown-item" href="#">AFILIARSE</a>
                     <a class="dropdown-item" href="#">COMUNICADO DE PRENSA</a>
-                    <a class="dropdown-item" href="#">ELECCIONES 2018</a>
+                    <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>
                         </div>
                         <li class="nav-item">
                   <a class="nav-link" href="#">DOCUMENTOS</a>
