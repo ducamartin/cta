@@ -2,11 +2,11 @@
 @section('content')
 
 
-@foreach ($notas as $nota)
+<!-- @foreach ($notas as $nota)
 
-<div class="col">
+<div class="">
   <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{$nota->titulo}}</h5>
       <ul>
@@ -16,6 +16,10 @@
       </ul>
     </div>
   </div>
+
+
+
+
   <div class="botonBorrar">
     <form class="" action="/borrarNota" method="post">
       @csrf
@@ -31,4 +35,47 @@
 </p>
 </div>
 </div>
-@endforeach
+@endforeach -->
+
+
+<!-- 
+<section class="principal">
+     <article class="nuevas" id="noticias">
+         <div class="notasvista">
+
+             <div class="form-row">
+              <div  class="form-group col-md-4">
+                  <label for="titulo">
+                    {{$notas->titulo}}
+                  </label>
+
+              </div>
+              <div  class="form-group col-md-4">
+                  <label for="epigrafe">
+
+                  {{$notas->epigrafe}}
+                </label>
+              </div>
+              <div  class="form-group col-md-4">
+                  <label for="cuerpo">
+
+                    {{$notas->cuerpo}}
+                  </label>
+              </div>
+              <div  class="form-group col-md-4">
+                  <label for="entrada">
+
+                    {{$notas->entrada}}
+                  </label>
+
+              </div>
+
+
+
+
+        </div>
+    </article>
+</section> -->
+
+
+@endsection

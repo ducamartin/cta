@@ -173,6 +173,23 @@ color: white;
 }
 
 
+
+/* AFILIACION */
+.afiliacion {
+  background-color: white;
+}
+.afiliacion a {
+  color: black;
+}
+
+.afiliacion p{
+  color: #4E96FF;
+}
+.afiliaciones h3 {
+  color:black!important;
+}
+
+
 /* media query */
 @media (max-width: 767px) {
   .img1{

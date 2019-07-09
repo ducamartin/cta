@@ -14,7 +14,7 @@
             <div class="dropdown-menu">
                     <a class="dropdown-item" href="{{'/cd'}}">MESA NACIONAL</a>
                     <a class="dropdown-item" href="#">CTA PROVINCIAS</a>
-                    <a class="dropdown-item" href="#">AFILIARSE</a>
+                    <a class="dropdown-item" href="{{'/afiliarse'}}">AFILIARSE</a>
                     <a class="dropdown-item" href="#">COMUNICADO DE PRENSA</a>
                     <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>
                         </div>

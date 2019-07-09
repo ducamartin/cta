@@ -45,13 +45,13 @@
    </div>
 
 <!-- IMAGEN -->
-   <!-- <div  class="form-group col-md-4">
-   <label for="imgProduct">Imagen del Producto</label>
-   Cambiar imagen:<input class="form-control" type="file" name="imgProduct" value="">
+   <div  class="form-group col-md-4">
+   <label for="imgNota">Imagen de la noticia</label>
+   Agregar Imagen<input class="form-control" type="file" name="imgNota" value="">
    @error('imgProduct')
    <div class="alert alert-danger">{{ $message }}</div>
    @enderror
- </div> -->
+ </div>
 
 
 

@@ -48,7 +48,7 @@
   </i>
 
 
-  <a href="http://ctanacional.org/dev/ficha-de-afiliacion-cta/">
+  <a href="{{'/afiliarse'}}">
   <i class="far fa-check-circle" id="cuatro">
   <br>
   <h2>
@@ -112,24 +112,26 @@
 @foreach ($notas as $nota)
 
 <div class="col">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="..." width="30px" height="30px">
+  <div class="card" style="width: 18rem;">
+    <img src="/storage/{{$nota->img}}" class="card-img-top" alt="..." >
     <div class="card-body">
       <h5 class="card-title">{{$nota->titulo}}</h5>
       <ul>
         <li class="precio text-center"> {{$nota->epigrafe}}</li>
         <li class="precio text-center"> {{$nota->entrada}}</li>
       </ul>
-<form class="" action="" method="post">
 
-@csrf
-<input type="hidden" name="id" value="noticias/{{$nota->id}}" >
-<input type="submit" name="" value="Ver Más"class="btn btn-primary">
-</form>
+
+<a href="notas/{{$nota->id}}">
+  <input type="submit" name="" value="Ver Más"class="btn btn-primary">
+
+</a>
+
+
       <div class="botonBorrar">
         <form class="" action="/borrarNota" method="post">
-          @csrf
-          <input type="hidden" name="id" value="noticias/{{$nota->id}}">
+          {{csrf_field()}}
+          <input type="hidden" name="id" value="{{$nota->id}}">
         <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
 
         </form>

@@ -28,4 +28,9 @@ public function cd(){
   return view ('comisionDirectiva');
 }
 
+
+public function afiliarse(){
+  return view ('afiliacion');
+}
+
 }
