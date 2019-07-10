@@ -1,81 +1,37 @@
-@extends('layouts.main')
+@extends('layouts.maindos')
 @section('content')
 
 
-<!-- @foreach ($notas as $nota)
+<blockquote class="blockquote text-center">
+  <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px" height="100px">
 
-<div class="">
-  <div class="card" style="width: 18rem;">
-    <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{$nota->titulo}}</h5>
-      <ul>
-        <li class="precio text-center"> {{$nota->epigrafe}}</li>
-        <li class="precio text-center"> {{$nota->entrada}}</li>
-        <li class ="precio text-center"> {{$nota->cuerpo}}</li>
-      </ul>
-    </div>
-  </div>
+<br>
+<cite title="Source Title">{{$notas->epigrafe}}</cite>
+    <div class="">
 
+      <h1 class="text-uppercase">{{$notas->titulo}}</h1>
 
+      <article class="container-fluid">
+        <div class="row justify-content-center nosotros">
+          <div class="info col-md-8">
 
+            <p class="text-justify">{{$notas->entrada}}</p>
+            <p class="text-justify">{{$notas->cuerpo}}</p>
 
-  <div class="botonBorrar">
-    <form class="" action="/borrarNota" method="post">
-      @csrf
-      <input type="hidden" name="id" value="{{$nota->id}}">
-    <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
-
-    </form>
-
-<p class="card-text">
-
-<a class="btn btn-primary" href="/notas/editar/{{$nota->id}}">Editar Nota</a>
-
-</p>
-</div>
-</div>
-@endforeach -->
-
-
-<!-- 
-<section class="principal">
-     <article class="nuevas" id="noticias">
-         <div class="notasvista">
-
-             <div class="form-row">
-              <div  class="form-group col-md-4">
-                  <label for="titulo">
-                    {{$notas->titulo}}
-                  </label>
-
-              </div>
-              <div  class="form-group col-md-4">
-                  <label for="epigrafe">
-
-                  {{$notas->epigrafe}}
-                </label>
-              </div>
-              <div  class="form-group col-md-4">
-                  <label for="cuerpo">
-
-                    {{$notas->cuerpo}}
-                  </label>
-              </div>
-              <div  class="form-group col-md-4">
-                  <label for="entrada">
-
-                    {{$notas->entrada}}
-                  </label>
-
-              </div>
-
-
-
-
+          </div>
         </div>
-    </article>
-</section> -->
+      </article>
 
 
-@endsection
+
+      <div class="botonBorrar">
+        <form class="" action="/borrarNota" method="post">
+          {{csrf_field()}}
+          <input type="hidden" name="id" value="{{$notas->id}}">
+          <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
+
+        </form>
+
+      </div>
+
+</blockquote>

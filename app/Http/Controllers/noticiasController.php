@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Notas;
-use App\Http\Controllers\notasController;
+
 
 class noticiasController extends Controller
 {
@@ -68,17 +68,12 @@ class noticiasController extends Controller
 
 
       public function show($id){
-        $vistaNotas = notas::find($id);
-          return view ('noticias');
+        $notas = notas::find($id);
+          return view ('noticias')
+          ->with([
+            'notas' => $notas]);
 
       }
-
-            public function mostrar($id){
-              $vistaNotas = notas::find($id);
-                return view ('noticias');
-
-            }
-
 
 
 
