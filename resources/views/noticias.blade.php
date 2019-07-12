@@ -9,15 +9,15 @@
 <cite title="Source Title">{{$notas->epigrafe}}</cite>
     <div class="">
 
-      <h1 class="text-uppercase">{{$notas->titulo}}</h1>
+      <h1 class="acheuno text-uppercase">{{$notas->titulo}}</h1>
 
       <article class="container-fluid">
         <div class="row justify-content-center nosotros">
           <div class="info col-md-8">
 
-            <p class=".entradaID text-justify">{{$notas->entrada}}</p>
-            <p class="text-justify">{{$notas->cuerpo}}</p>
-
+            <p class="entradaID text-justify">{{$notas->entrada}}</p>
+          <pre class="text-justify element element-paragraph">{{$notas->cuerpo}}
+            <pre>
           </div>
         </div>
       </article>

@@ -17,8 +17,9 @@ class ViewController extends Controller
      return view('contacto');
    }
    public function indexNotas(){
-  
-     $notas = notas::all();
+
+
+     $notas = notas::orderBy('id','desc')->get();
      return view('index')
      ->with([
        'notas' => $notas]);

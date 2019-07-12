@@ -201,11 +201,15 @@ color: white;
   width: 10%;
 }
 
-
-.notasID p{
-  font-family: 'Lato', sans-serif;
+.acheuno h1{
+  color: black;
 }
-.entradaID {
+.notasID pre{
+  font-family: 'Lato', sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.entradaID p{
   font-family: 'Libre Franklin', sans-serif;
 }
 
