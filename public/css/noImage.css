@@ -92,6 +92,10 @@ div .news2{
   top: 120px;
 }
 
+
+
+
+
 .menu ul li:hover, .menu ul li:focus{
   background-color: #fff;
 }
@@ -195,6 +199,14 @@ color: white;
 
 .card-img-top{
   width: 10%;
+}
+
+
+.notasID p{
+  font-family: 'Lato', sans-serif;
+}
+.entradaID {
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 /* media query */

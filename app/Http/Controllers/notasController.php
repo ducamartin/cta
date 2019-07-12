@@ -5,17 +5,28 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Notas;
 use App\Http\Controllers\notasController;
+use Auth;
+
 class notasController extends Controller
 {
 
 
+
   public function vista (Request $req){
+    $usuarioLog = Auth::user();
+    if (  $usuarioLog == null) {
+      return view ('index');
+    }
     return view ('/nuevaNota');
 
   }
 
 
   public function agregar(Request $req){
+    $usuarioLog = Auth::user();
+    if (  $usuarioLog == null) {
+      return view ('/');
+    }
 
 $this->validate($req, [
 
@@ -53,6 +64,10 @@ $this->validate($req, [
   }
 
   public function borrar(Request $req){
+    $usuarioLog = Auth::user();
+    if (  $usuarioLog == null) {
+      return view ('index');
+    }
     $id = $req ['id'];
     $notas = notas::find($id);
     $notas->delete();

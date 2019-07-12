@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Notas;
+use Auth;
 
 class ViewController extends Controller
 {
+
    public function index(){
      return view('index');
    }
@@ -15,7 +17,7 @@ class ViewController extends Controller
      return view('contacto');
    }
    public function indexNotas(){
-
+  
      $notas = notas::all();
      return view('index')
      ->with([

@@ -104,22 +104,30 @@
 <br>
 
 
-<article class="container-fluid">
+@auth
+<a href="{{'/nuevaNota'}}">
+
+  <input type="submit" name="Nueva Nota" value="Nueva Nota" class="btn btn-success">
+</a>
+@endauth
+<article class="noticiasIndex container-fluid">
 
   <div class="row" style="background: white">
 
 
 @foreach ($notas as $nota)
+<div class="row">
 
-<div class="col">
+<div class="col-sm-6">
   <div class="card" style="width: 18rem;">
 
     <div class="card-body">
-      <h5 class="card-title">{{$nota->titulo}}</h5>
-      <ul>
-        <li class="precio text-center"> {{$nota->epigrafe}}</li>
-        <li class="precio text-center"> {{$nota->entrada}}</li>
-      </ul>
+      <p class="precio text-center font-italic"> {{$nota->epigrafe}}</p>
+       <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
+      <h5 class="card-title text-center text-uppercase">{{$nota->titulo}}</h5>
+
+        <p class="precio text-justify"> {{$nota->entrada}}</p>
+
 
 
 <a href="notas/{{$nota->id}}">
@@ -127,7 +135,7 @@
 
 </a>
 
-
+@auth
       <div class="botonBorrar">
         <form class="" action="/borrarNota" method="post">
           {{csrf_field()}}
@@ -137,13 +145,19 @@
         </form>
 
       </div>
+
+@endauth
     </div>
 
     </div>
   </div>
 </div>
-</div>
+
+
 @endforeach
+
+
+</div>
 
 
  @endsection

@@ -92,6 +92,11 @@ div .news2{
   top: 120px;
 }
 
+.noticiasIndex p {
+  font-family: 'Lato', sans-serif;
+
+}
+
 .menu ul li:hover, .menu ul li:focus{
   background-color: #fff;
 }

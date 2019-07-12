@@ -20,6 +20,10 @@ class noticiasController extends Controller
 
 
       public function borrar(Request $req){
+        $usuarioLog = Auth::user();
+        if (  $usuarioLog == null) {
+          return view ('/');
+        }
         $id = $req ['id'];
         $notas = notas::find($id);
         $notas->delete();
@@ -34,14 +38,12 @@ class noticiasController extends Controller
           'notes' => $notes
         ]);
       }
-
       public function update($id, Request $request){
         $this->validate($request,[
           'titulo'=>'required:notas',
           'epigrafe'=>'required:notas',
           'cuerpo'=>'required:notas',
           'entrada'=>'required:notas',
-
         ],
         [
         'titulo.required' => 'El titulo es requerido (Max: 255 Caracteres)',
@@ -49,21 +51,15 @@ class noticiasController extends Controller
         'cuerpo.required' => 'El cuerpo de la noticia es requerido',
         'entrada.required' => 'La entrada es requerida (Max: 250 Caracteres)'
       ]);
-
-
-
       $notaAEditar = notas::find($id);
-
-      $notaAEditar->titulo = $request->input('titulo');
-      $notaAEditar->epigrafe = $request->input('epigrafe');
-      $notaAEditar->cuerpo = $request->input('cuerpo');
-      $notaAEditar->entrada = $request->input('entrada');
-
+      $notaAEditar->titulo = $request->titulo;
+      $notaAEditar->epigrafe = $request->epigrafe;
+      $notaAEditar->cuerpo = $request->cuerpo;
+      $notaAEditar->entrada = $request->entrada;
       $notaAEditar->save();
-
       return redirect ('/')->with('mensaje', 'Nota Editada Exitosamente');
-
       }
+
 
 
 

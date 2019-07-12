@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
+use Auth;
 class agregarNotas extends Controller
 {
 
 
 
 
+
 public function agregar(Request $req){
+  $usuarioLog = Auth::user();
+  if (  $usuarioLog == null) {
+    return view ('/');
+  }
+
     $nuevaNota = new notas ();
 
     $nuevaNota->titulo = $req->input('titulo');
@@ -28,6 +34,10 @@ return redirect('/');
 }
 
 public function new(){
+  $usuarioLog = Auth::user();
+  if (  $usuarioLog == null) {
+    return view ('index');
+  }
 
   $titulo = titulo::all();
   $epigrafe = epigrafe::all();
@@ -44,7 +54,7 @@ public function new(){
 
 }
 
-// 
+//
 //
 // public function edit($id){
 //   $notas = notas::find($id);
