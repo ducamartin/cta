@@ -4,6 +4,7 @@
 
 
 
+Route::get('/noticias','noticiasController@ver');
 
 Route::post('/borrarNota','notasController@borrar');
 

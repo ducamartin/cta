@@ -52,12 +52,23 @@ class noticiasController extends Controller
           'entrada.required' => 'La entrada es requerida (Max: 250 Caracteres)'
         ]);
         $notaAEditar = notas::find($id);
-        $notaAEditar->epigrafe = $request->input('epigrafe');
-        $notaAEditar->titulo = $request->input('titulo');
-        $notaAEditar->cuerpo = $request->input('cuerpo');
-        $notaAEditar->entrada = $request->input('entrada');
+        $notaAEditar->epigrafe = $request->epigrafe;
+        $notaAEditar->titulo = $request->titulo;
+        $notaAEditar->cuerpo = $request->cuerpo;
+        $notaAEditar->entrada = $request->entrada;
+
+
+        if ($request->file('img')) {
+          if ($notaAEditar->img) {
+            Storage::disk('public')->delete($notaAEditar->img);
+          }
+          $rutaDelArchivo = $request->file('img')->store('public');
+            $nombreArchivo = basename($rutaDelArchivo);
+            $peliculaAEditar->poster = $nombreArchivo;
+        }
         $notaAEditar->save();
-        return redirect ('index')->with('mensaje', 'Nota Editada Exitosamente');
+        return redirect ('/')->with([
+      'mensaje', 'Producto eliminadoi exitosamente!']);
         }
 
 
@@ -71,7 +82,12 @@ class noticiasController extends Controller
 
       }
 
-
+          public function ver(){
+            $notas = notas::orderBy('id','desc')->paginate(10);
+            return view('catalogo')
+            ->with([
+              'notas' => $notas]);
+          }
 
 
 

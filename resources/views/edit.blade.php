@@ -8,7 +8,15 @@
              <form method="post" action="" enctype="multipart/form-data">
                @csrf
                <h2>Edición de Noticias</h2>
-            
+               <div class="form-row">
+                <div  class="form-group col-md-4">
+                    <label for="epigrafe">Epigrafe</label>
+                    <input class="form-control" type="text" name="epigrafe"
+                    id="epigrafe" value="{{old('epigrafe', $notes->epigrafe)}}">
+                   @error('epigrafe')
+                      <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
+                </div>
 
                 <div class="form-group col-md-4">
                     <label for="titulo">Titulo</label>
@@ -38,14 +46,26 @@
                     @enderror
                 </div>
 
+                <div  class="form-group col-md-4">
+                    <label for="img">Imagen</label>
+                    <img src="/storage/{{$notes->img}}" width="100px" alt="">
+                    Cambiar imagen:<input class="form-control" type="file" name="img" value="">
+                    @error('img')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
-                </div>
+
+
                 </div>
                 <button type="submit" name="button" class="btn btn-primary">Guardar</button>
+                </div>
+
 
             </form>
           </div>
       </article>
   </section>
+
+
 
 @endsection
