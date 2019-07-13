@@ -33,32 +33,32 @@ class noticiasController extends Controller
 
 
       public function edit($id){
-        $notes = notas::find($id);
-        return view ('edit') -> with([
-          'notes' => $notes
+          $notes = notas::find($id);
+          return view ('edit') -> with([
+            'notes' => $notes
+          ]);
+        }
+        public function update($id, Request $request){
+          $this->validate($request,[
+            'epigrafe'=>'required:notas',
+            'titulo'=>'required:notas',
+            'cuerpo'=>'required:notas',
+            'entrada'=>'required:notas',
+          ],
+          [
+            'epigrafe.required' => 'El epigrafe es requerido (Max: 25 Caracteres)',
+          'titulo.required' => 'El titulo es requerido (Max: 255 Caracteres)',
+          'cuerpo.required' => 'El cuerpo de la noticia es requerido',
+          'entrada.required' => 'La entrada es requerida (Max: 250 Caracteres)'
         ]);
-      }
-      public function update($id, Request $request){
-        $this->validate($request,[
-          'titulo'=>'required:notas',
-          'epigrafe'=>'required:notas',
-          'cuerpo'=>'required:notas',
-          'entrada'=>'required:notas',
-        ],
-        [
-        'titulo.required' => 'El titulo es requerido (Max: 255 Caracteres)',
-        'epigrafe.required' => 'El epigrafe es requerido (Max: 25 Caracteres)',
-        'cuerpo.required' => 'El cuerpo de la noticia es requerido',
-        'entrada.required' => 'La entrada es requerida (Max: 250 Caracteres)'
-      ]);
-      $notaAEditar = notas::find($id);
-      $notaAEditar->titulo = $request->titulo;
-      $notaAEditar->epigrafe = $request->epigrafe;
-      $notaAEditar->cuerpo = $request->cuerpo;
-      $notaAEditar->entrada = $request->entrada;
-      $notaAEditar->save();
-      return redirect ('/')->with('mensaje', 'Nota Editada Exitosamente');
-      }
+        $notaAEditar = notas::find($id);
+        $notaAEditar->epigrafe = $request->input('epigrafe');
+        $notaAEditar->titulo = $request->input('titulo');
+        $notaAEditar->cuerpo = $request->input('cuerpo');
+        $notaAEditar->entrada = $request->input('entrada');
+        $notaAEditar->save();
+        return redirect ('index')->with('mensaje', 'Nota Editada Exitosamente');
+        }
 
 
 

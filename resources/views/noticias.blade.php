@@ -33,10 +33,8 @@
         </form>
 
       </div>
-<a href="/notas/editar/{id}">
 
-  <input type="submit" name="" value="Editar Nota" class="class="btn btn-warning"">
-</a>
+<a class="btn btn-primary" href="/notas/editar/{{$notas->id}}">Editar Nota</a>
 
 
       @endauth
