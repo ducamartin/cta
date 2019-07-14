@@ -1,9 +1,17 @@
 <?php
 
 
+// documentos
+
+Route::get('/documentos','documentosController@ver');
+
+Route::post('/nuevoDoc', 'documentosController@agregar');
+Route::get('/nuevoDoc', 'documentosController@vista');
 
 
 
+
+// noticias
 Route::get('/noticias','noticiasController@ver');
 
 Route::post('/borrarNota','notasController@borrar');

@@ -19,7 +19,7 @@
                     <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>
                         </div>
                         <li class="nav-item">
-                  <a class="nav-link" href="#">DOCUMENTOS</a>
+                  <a class="nav-link" href="{{'/documentos'}}">DOCUMENTOS</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{'/contacto'}}">CONTACTO</a>
