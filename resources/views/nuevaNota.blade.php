@@ -1,6 +1,20 @@
-@extends('layouts.notfooter')
-@section('content')
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Subir Nota</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Franklin|Montserrat|PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+  </head>
+  <body>
 <div class="container-fluid registro " style="background-color: #B8B8B8;">
   <div class="justify-content-center">
 
@@ -36,23 +50,16 @@
 
 
  </div>
- <div class="btn-group" role="group" aria-label="Basic example">
-   <button type="button" class="btn btn-success">B</button>
-   <button type="button" class="btn btn-success">I</button>
-   <button type="button" class="btn btn-success">U</button>
-   <button type="button" class="btn btn-success">S</button>
-   <button type="button" class="btn btn-success">LINK</button>
-   <button type="button" class="btn btn-success">OCULTAR</button>
-   <button type="button" class="btn btn-success">Quote</button>
-   <button type="button" class="btn btn-success">LISTA</button>
- </div>
+ <label for="cuerpo">Cuerpo</label>
 
-   <div  class="form-group ">
-       <label for="cuerpo">Cuerpo</label>
-       <textarea class="form-control" name="cuerpo" id="cuerpo"  value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
-       @error('cuerpo')
-           <div class="alert alert-danger">{{ $message }}</div>
-       @enderror
+
+     <textarea class="form-control" name="cuerpo" id="summernote"    value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
+     @error('cuerpo')
+     <div class="alert alert-danger">{{ $message }}</div>
+     @enderror
+
+
+
 
 <!-- IMAGEN -->
    <div  class="form-group">
@@ -62,15 +69,17 @@
    <div class="alert alert-danger">{{ $message }}</div>
    @enderror
  </div>
-
-
-
    <button type="submit" name="button" class="btn btn-primary">Subir Nota</button>
 
  </form>
-
 </div>
 
-
-</div>
-@endsection
+    <script>
+      $('#summernote').summernote({
+        placeholder: 'Inserte texto Aqui',
+        tabsize: 2,
+        height: 500,
+      });
+    </script>
+  </body>
+	</html>

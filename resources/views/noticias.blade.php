@@ -2,6 +2,7 @@
 @section('content')
 
 
+
 <blockquote class="notasID blockquote text-center">
   <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px" height="100px">
 
@@ -9,18 +10,33 @@
 <cite title="Source Title">{{$notas->epigrafe}}</cite>
     <div class="">
 
-      <h1 class="acheuno text-uppercase">{{$notas->titulo}}</h1>
+      <h1 class="acheuno text-uppercase" style="color:black;">{{$notas->titulo}}</h1>
+      <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet">
+      Tweet</a>
 
-      <article class="container-fluid">
         <div class="row justify-content-center nosotros">
           <div class="info col-md-8">
 
-            <p class="entradaID text-justify">{{$notas->entrada}}</p>
-          <pre class="text-justify element element-paragraph">{{$notas->cuerpo}}
-            <pre>
-          </div>
-        </div>
-      </article>
+            <p class="entradaID text-justify" style="font-family:'Libre Franklin', sans-serif;">{{$notas->entrada}}</p>
+</div>
+</div>
+</blockquote>
+
+
+
+<blockquote class="blockquote text-justify">
+
+
+  <p class="col-sm-6">
+    <?php echo "{$notas->cuerpo}"; ?>
+
+  </p>
+</blockquote>
+
+
+
+<blockquote class="notasID blockquote text-center">
 
 @auth
 
