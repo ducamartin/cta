@@ -17,14 +17,17 @@ class ViewController extends Controller
      return view('contacto');
    }
    public function indexNotas(){
-
-
-     $notas = notas::orderBy('id','desc')->get();
+     $notas = notas::all();
+     if(isset($_GET[''])){
+         $notas = notas::where('', 'LIKE', '%'.$_GET[''].'%')->paginate(10);
+       } else{
+         $notas = notas::orderBy('id','desc')->get();
+       }
      return view('index')
      ->with([
        'notas' => $notas]);
-
 }
+
 
 
 public function cd(){

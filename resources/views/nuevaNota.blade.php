@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+
   </head>
   <body>
 <div class="container-fluid registro " style="background-color: #B8B8B8;">
@@ -53,7 +54,7 @@
  <label for="cuerpo">Cuerpo</label>
 
 
-     <textarea class="form-control" name="cuerpo" id="summernote"    value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
+     <textarea class="form-control" name="cuerpo" id="summernote" value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
      @error('cuerpo')
      <div class="alert alert-danger">{{ $message }}</div>
      @enderror
@@ -78,8 +79,9 @@
       $('#summernote').summernote({
         placeholder: 'Inserte texto Aqui',
         tabsize: 2,
-        height: 500,
+        height: 500
       });
+
     </script>
   </body>
 	</html>

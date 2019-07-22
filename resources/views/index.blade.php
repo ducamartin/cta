@@ -101,8 +101,6 @@
 </article>
 </div>
 
-<br>
-
 
 @auth
 <a href="{{'/nuevaNota'}}">
@@ -112,7 +110,22 @@
 @endauth
 <article class="noticiasIndex container-fluid">
 
-  <div class="row" style="background: white">
+  <div class="busqueda row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-6 filtroBusqueda">
+          <form class="" action="" method="get">
+            <div class="row">
+              <div class="col-xs-9 col-sm-8 col-md-8 search">
+                <input type="text" name="name" value="" class="cuadroBusqueda form-control" placeholder="Ingrese una palabra">
+              </div>
+              <div class="col-xs-3 col-sm-4 col-md-4 search">
+                <button type="submit" class="btn btn-block btn-primary botonBusqueda" >Buscar</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>  <div class="row" style="background: white">
 
 
 @foreach ($notas as $nota)

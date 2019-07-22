@@ -11,10 +11,7 @@
     <div class="">
 
       <h1 class="acheuno text-uppercase" style="color:black;">{{$notas->titulo}}</h1>
-      <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet">
-      Tweet</a>
-
+  
         <div class="row justify-content-center nosotros">
           <div class="info col-md-8">
 
