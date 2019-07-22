@@ -23,13 +23,13 @@
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
       <div class="info col-md-8">
-        <i class="far fas fa-users" id="uno"><br>
+        <i class="far fas fa-users fa-5x" id="uno"><br>
   <h2>Comisión Directiva</h2>
   </i>
 
 </a>
 <a href="http://ctanacional.org/dev/que-es-la-cta/">
-  <i class="far fa-question-circle" id="dos">
+  <i class="far fa-question-circle fa-5x" id="dos">
   <br>
   <h2>
     ¿Qué es la CTA?
@@ -38,18 +38,20 @@
 </a>
 
 
+<a href="#">
 
-  <i class="far fa-map 5x"  id="tres">
-  <br>
-  <h2>
-    <p>CTAs Provincias</p>
-  </h2>
+  <i class="far fa-map 5x fa-5x"  id="tres">
+    <br>
+    <h2>
+      <p>CTAs Provincias</p>
+    </h2>
 
   </i>
+</a>
 
 
   <a href="{{'/afiliarse'}}">
-  <i class="far fa-check-circle" id="cuatro">
+  <i class="far fa-check-circle fa-5x" id="cuatro">
   <br>
   <h2>
      Afiliarse
@@ -115,7 +117,7 @@
           <form class="" action="" method="get">
             <div class="row">
               <div class="col-xs-9 col-sm-8 col-md-8 search">
-                <input type="text" name="name" value="" class="cuadroBusqueda form-control" placeholder="Ingrese una palabra">
+                <input type="text" name="name" value="" class="cuadroBusqueda form-control" placeholder="Buscar Nota">
               </div>
               <div class="col-xs-3 col-sm-4 col-md-4 search">
                 <button type="submit" class="btn btn-block btn-primary botonBusqueda" >Buscar</button>
@@ -168,6 +170,7 @@
 
 
 @endforeach
+{{ $notas->links() }}
 
 
 </div>

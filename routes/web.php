@@ -27,7 +27,7 @@ Route::get('/notas/{id}','noticiasController@show');
 
 
 
-
+Route::get('/provincias','ViewController@provincias');
 Route::get('/afiliarse','ViewController@afiliarse');
 Route::get('/', 'ViewController@index');
 Route::get('/cd', 'ViewController@cd');

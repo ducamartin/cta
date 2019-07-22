@@ -11,18 +11,18 @@ class ViewController extends Controller
 
    public function index(){
      return view('index');
+     if(isset($_GET['name'])){
+         $notas = notas::where('name', 'LIKE', '%'.$_GET[''].'%')->paginate(10);
+       } else{
+         $notas = notas::orderBy('id','desc')->get();
+       }
    }
 
    public function contact(){
      return view('contacto');
    }
    public function indexNotas(){
-     $notas = notas::all();
-     if(isset($_GET[''])){
-         $notas = notas::where('', 'LIKE', '%'.$_GET[''].'%')->paginate(10);
-       } else{
-         $notas = notas::orderBy('id','desc')->get();
-       }
+     $notas = notas::orderBy('id','desc')->paginate(10);
      return view('index')
      ->with([
        'notas' => $notas]);
@@ -38,5 +38,16 @@ public function cd(){
 public function afiliarse(){
   return view ('afiliacion');
 }
+
+
+
+
+public function provincias(){
+  return view ('provincias');
+}
+
+
+
+
 
 }

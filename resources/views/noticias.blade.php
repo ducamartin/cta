@@ -11,7 +11,7 @@
     <div class="">
 
       <h1 class="acheuno text-uppercase" style="color:black;">{{$notas->titulo}}</h1>
-  
+
         <div class="row justify-content-center nosotros">
           <div class="info col-md-8">
 
@@ -22,13 +22,14 @@
 
 
 
-<blockquote class="blockquote text-justify">
+<blockquote>
 
+<div class=" justify-content-justify col-md-8">
 
-  <p class="col-sm-6">
+  <p class="">
     <?php echo "{$notas->cuerpo}"; ?>
-
   </p>
+</div>
 </blockquote>
 
 

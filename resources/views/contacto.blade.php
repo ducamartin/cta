@@ -5,6 +5,8 @@
   <head>
     <meta charset="utf-8">
     <title>Contacto</title>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3"></script>
   </head>
   <body style="background-color:#050B7A!important">
 
@@ -25,47 +27,32 @@
                 </div>
                 <div class="contactotext">
 
-                <div class="justify-content-center ">
+                <div class="justify-content-center" style="background-color:white!important">
 
-                      <p class="text-center" text-center>MISIONES</p>
-                <p class="text-center">Av. Corrientes 2150, Posadas</p>
+                      <p class="text-center" style="color:black">MISIONES</p>
+                <p class="text-center" style="color:black">Av. Corrientes 2150, Posadas</p>
 
-            <a href="tel: 0376 442-8901"><p class="text-center">Telefono: 0376 442-8901</p></a>
+            <a href="tel: 0376 442-8901"><p class="text-center" style="color:black">Telefono: 0376 442-8901</p></a>
             <a href="mailto:user@user?subject=feedback">
-              <p class="text-center">mail@prensa.cta</p>
+              <p class="text-center" style="color:black">mail@prensa.cta</p>
             </a>
               </div>
 
               </div>
     </div>
-    <div class=" row justify-content-center ">
 
-    <div class=" col-md-4">
-      <div class="contactomail">
 
-      <div class="">
-        <h3 class="text-center">Comunicate con nosotros</h3>
-      </div>
-      <form class="contacto">
-        <div class="form-group">
-          <label for="email" class="" class="text-center">Ingrese su Email</label>
-          <input type="email" class="form-control" id="email" placeholder="su@mail.com">
-        </div>
-        <div class="form-group">
-          <label for="comentario" class="" class="text-center">Dejanos tu comentario</label>
-          <textarea class="form-control" id="comentario" rows="12"></textarea>
-        </div>
-        <div class="boton">
-          <div class="form-group">
-            <input type="submit" name="" value="ENVIAR">
-          </div>
-        </div>
-      </form>
-    </div>
-    </div>
+<div class="justify-content-center row">
+  <div class="row col-md-4">
 
-    </div>
-    </div>
 
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCtaMisiones%2F&tabs=timeline&width=800&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="800" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fagencia.acta%2F&tabs=timeline&width=800&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="800" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FATEnacional%2F&tabs=timeline&width=800&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="800" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+
+</div>
   </body>
 </html>
