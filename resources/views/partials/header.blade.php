@@ -13,9 +13,8 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">INSTITUCIONAL</a>
             <div class="dropdown-menu">
                     <a class="dropdown-item" href="{{'/cd'}}">MESA NACIONAL</a>
-                    <a class="dropdown-item" href="{{'/provincias'}}">CTA PROVINCIAS</a>
+                    <a class="dropdown-item" href="{{'/provincias'}}">CTA MISIONES</a>
                     <a class="dropdown-item" href="{{'/afiliarse'}}">AFILIARSE</a>
-                    <a class="dropdown-item" href="http://ctanacional.org/dev/category/secretarias/comunicacion/comunicados-de-prensa/">COMUNICADO DE PRENSA</a>
                     <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>
                         </div>
                         <li class="nav-item">
