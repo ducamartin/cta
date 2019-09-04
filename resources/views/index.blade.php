@@ -1,14 +1,28 @@
 @extends('layouts.main')
 
 @section('content')
-<br>
 <div class="color">
+<br>
+<br>
   <article class="primero">
-    <div class="col bd-example justify-content-center info">
+  <div class="col bd-example justify-content-center info">
+  <article class="container-fluid">
+  <div class="row justify-content-center">
+  <div class="">
+  <a href="http://ctanacional.org/dev/"><img src="imagenes\cta-blanco.png" alt="">
+  </a>
+  </div>
+  </div>
 
-      <h1>CTA AUTONOMA</h1>
+</article>
+<br>
+<br>
+<br>
+<br>
+
 
       <h6>------------------------------------------------------------------------------------------</h6>
+      <br>
       </div>
 
   </article>
@@ -20,13 +34,13 @@
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
       <div class="info col-md-8">
-        <i class="far fas fa-users fa-2x" id="uno"><br>
+        <i class="far fas fa-users fa-3x" id="uno"><br>
   <h4>Comisión Directiva</h4>
   </i>
 
 </a>
 <a href="http://ctanacional.org/dev/que-es-la-cta/">
-  <i class="far fa-question-circle fa-2x" id="dos">
+  <i class="far fa-question-circle fa-3x" id="dos">
   <br>
   <h4>
     ¿Qué es la CTA?
@@ -37,7 +51,7 @@
 
 <a href="#">
 
-  <i class="far fa-map 3x fa-2x"  id="tres">
+  <i class="far fa-map 3x fa-3x"  id="tres">
     <br>
     <h4>
       <p>CTAs Provincias</p>
@@ -48,7 +62,7 @@
 
 
   <a href="{{'/afiliarse'}}">
-  <i class="far fa-check-circle fa-2x" id="cuatro">
+  <i class="far fa-check-circle fa-3x" id="cuatro">
   <br>
   <h4>
      Afiliarse
@@ -91,16 +105,6 @@
 </article>
 
 <br>
-<article class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="">
-<a href="http://ctanacional.org/dev/"><img src="imagenes\cta-blanco.png" alt="">
-</a>
-
-    </div>
-  </div>
-
-</article>
 </div>
 
 
@@ -127,8 +131,11 @@
 
         </div>
 
-      </div>  <div class="row" style="background: white">
-
+      </div>
+        <div class="row" style="background: white">
+        <div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
+      	</div>
 
 @foreach ($notas as $nota)
 <div class="row">
