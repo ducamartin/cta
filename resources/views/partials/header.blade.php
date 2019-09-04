@@ -24,10 +24,10 @@
 
             </li>
            <a href="https://es-la.facebook.com/CtaMisiones/">
-           <i class="fab fa-facebook"></i>
+           <i class="fab fa-facebook fa-2x"></i>
            </a> 
            <a href="https://www.instagram.com/ctaamisiones/">
-           <i class="fab fa-instagram"></i>
+           <i class="fab fa-instagram fa-2x"></i>
            </a>
 
 

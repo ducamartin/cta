@@ -12,6 +12,7 @@ Route::get('/nuevoDoc', 'documentosController@vista');
 
 
 // noticias
+Route::get('/paneldecontrol','noticiasController@control');
 Route::get('/noticias','noticiasController@ver');
 
 Route::post('/borrarNota','notasController@borrar');

@@ -2,15 +2,12 @@
 
 <footer>
   <div class="mapa">
-
-
+  <div class=" col-md-8">
   <div class="row justify-content-center ">
-      
-
-
-      <div class=" col-md-4">
-            </div>
-            </div>
+           
+            <a href="http://www.csa-csi.org">
+              <img src="imagenes/ODS.png" alt="">
+            </a>
             <div class="logo">
 
             <div class=" row justify-content-center ">
@@ -20,16 +17,20 @@
 
             <p>Av. Corrientes 2150, Posadas</p>
             <p>Telefono:0376 442-8901</p>
-            <a href="http://www.csa-csi.org">
-              <img src="imagenes/ODS.png" alt="">
-            </a>
+            
+            
             <a href="https://www.ituc-csi.org/?lang=en">
               <img src="imagenes/ITUC.png" alt="">
             </a>
-          </div>
+          
+        <a href="https://es-la.facebook.com/CtaMisiones/">
+           <i class="fab fa-facebook fa-2x"></i>
+           </a> 
+           <a href="https://www.instagram.com/ctaamisiones/">
+           <i class="fab fa-instagram fa-2x"></i>
+           </a>
         </div>
-
-        <p>By Martin Duca ©</p>
+       
 </div>
 
 </div>

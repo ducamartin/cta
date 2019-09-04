@@ -26,7 +26,7 @@
 
 
    <div  class="form-group ">
-     <label for="epigrafe">Epigrafe</label>
+     <label for="epigrafe">Volanta</label>
      <input class="form-control" type="text" name="epigrafe" id="epigrafe" value="{{ old('epigrafe') }}">
      @error('epigrafe')
      <div class="alert alert-danger">{{ $message }}</div>
@@ -42,7 +42,7 @@
    </div>
 
    <div  class="form-group ">
-     <label for="entrada">Entrada</label>
+     <label for="entrada">Copete</label>
      <textarea class="form-control" name="entrada" id="entrada"  value="{{ old('entrada') }}" rows="8" cols="50"></textarea>
      @error('entrada')
      <div class="alert alert-danger">{{ $message }}</div>
@@ -54,7 +54,7 @@
  <label for="cuerpo">Cuerpo</label>
 
 
-     <textarea class="form-control" name="cuerpo" id="summernote" value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
+     <textarea class="form-control" name="cuerpo" value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
      @error('cuerpo')
      <div class="alert alert-danger">{{ $message }}</div>
      @enderror
@@ -75,13 +75,6 @@
  </form>
 </div>
 
-    <script>
-      $('#summernote').summernote({
-        placeholder: 'Inserte texto Aqui',
-        tabsize: 2,
-        height: 500
-      });
-
-    </script>
+    
   </body>
 	</html>

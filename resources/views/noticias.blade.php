@@ -1,7 +1,22 @@
 @extends('layouts.maindos')
 @section('content')
 
+@auth
 
+      <div class="botonBorrar">
+        <form class="" action="/borrarNota" method="post">
+          {{csrf_field()}}
+          <input type="hidden" name="id" value="{{$notas->id}}">
+          <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
+
+        </form>
+
+      </div>
+
+<a class="btn btn-primary" href="/notas/editar/{{$notas->id}}">Editar Nota</a>
+
+
+      @endauth
 <div  class="notasID blockquote text-center">
 
 
@@ -26,7 +41,7 @@
 
 <blockquote>
 
-<div class=" justify-content-justify col-md-8">
+<div class=" info col-md-8">
 
   <p class="">
     <?php echo "{$notas->cuerpo}"; ?>
@@ -39,21 +54,6 @@
 <blockquote class="notasID blockquote text-center">
 </div>
 
-@auth
 
-      <div class="botonBorrar">
-        <form class="" action="/borrarNota" method="post">
-          {{csrf_field()}}
-          <input type="hidden" name="id" value="{{$notas->id}}">
-          <input type="submit" name="" value="Borrar Nota" class="btn btn-danger">
-
-        </form>
-
-      </div>
-
-<a class="btn btn-primary" href="/notas/editar/{{$notas->id}}">Editar Nota</a>
-
-
-      @endauth
 
 </blockquote>

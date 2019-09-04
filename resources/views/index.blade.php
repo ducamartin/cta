@@ -20,39 +20,39 @@
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
       <div class="info col-md-8">
-        <i class="far fas fa-users fa-3x" id="uno"><br>
-  <h2>Comisión Directiva</h2>
+        <i class="far fas fa-users fa-2x" id="uno"><br>
+  <h4>Comisión Directiva</h4>
   </i>
 
 </a>
 <a href="http://ctanacional.org/dev/que-es-la-cta/">
-  <i class="far fa-question-circle fa-3x" id="dos">
+  <i class="far fa-question-circle fa-2x" id="dos">
   <br>
-  <h2>
+  <h4>
     ¿Qué es la CTA?
-  </h2>
+  </h4>
   </i>
 </a>
 
 
 <a href="#">
 
-  <i class="far fa-map 3x fa-3x"  id="tres">
+  <i class="far fa-map 3x fa-2x"  id="tres">
     <br>
-    <h2>
+    <h4>
       <p>CTAs Provincias</p>
-    </h2>
+    </h4>
 
   </i>
 </a>
 
 
   <a href="{{'/afiliarse'}}">
-  <i class="far fa-check-circle fa-3x" id="cuatro">
+  <i class="far fa-check-circle fa-2x" id="cuatro">
   <br>
-  <h2>
+  <h4>
      Afiliarse
-   </h2>
+   </h4>
    </i>
  </a>
 
