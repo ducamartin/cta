@@ -106,6 +106,13 @@ div .news2{
   top: 120px;
 }
 
+.noticiasIndex a {
+  color: black;
+  text-decoration: none;
+}
+
+}
+
 .noticiasIndex p {
   font-family: 'Lato', sans-serif;
 
@@ -154,11 +161,11 @@ i{
 
 /* FOOTER */
 
-.mapa {
+.footer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.mapa h2{
+.footer h2{
   color: white;
   display: flex;
   position: relative;

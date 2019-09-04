@@ -1,39 +1,43 @@
 
 
 <footer>
-  <div class="mapa">
-  <div class=" col-md-8">
+  <div class="footer col bd-example justify-content-center">
+  <div class=" col-md-16">
   <div class="row justify-content-center ">
            
-            <a href="http://www.csa-csi.org">
-              <img src="imagenes/ODS.png" alt="">
-            </a>
-            <div class="logo">
-
-            <div class=" row justify-content-center ">
-                <div class="col-md-4">
+    <a href="http://www.csa-csi.org">
+    <img src="imagenes/ODS.png" alt="">
+  </a>
+  
+  
+  <div class="logo">
+                <div class="col-md-12">
                   <p>MISIONES</p>
             <img src="imagenes/cta-blanco.png" alt="">
 
             <p>Av. Corrientes 2150, Posadas</p>
             <p>Telefono:0376 442-8901</p>
-            
+</div>
+</div>
             
             <a href="https://www.ituc-csi.org/?lang=en">
               <img src="imagenes/ITUC.png" alt="">
             </a>
           
-        <a href="https://es-la.facebook.com/CtaMisiones/">
-           <i class="fab fa-facebook fa-2x"></i>
-           </a> 
-           <a href="https://www.instagram.com/ctaamisiones/">
-           <i class="fab fa-instagram fa-2x"></i>
-           </a>
         </div>
-       
-</div>
+       <div class="row justify-content-center">
+
+         
+         <a href="https://es-la.facebook.com/CtaMisiones/">
+         <i class="fab fa-facebook fa-2x"></i>
+        </a> 
+        <a href="https://www.instagram.com/ctaamisiones/">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+    </div>
 
 </div>
+
 </footer>
 
 

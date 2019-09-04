@@ -35,7 +35,7 @@
     <div class="row justify-content-center nosotros">
       <div class="info col-md-8">
         <i class="far fas fa-users fa-3x" id="uno"><br>
-  <h4>Comisión Directiva</h4>
+  <h4>Comisión Directiva Provincial</h4>
   </i>
 
 </a>
@@ -45,18 +45,6 @@
   <h4>
     ¿Qué es la CTA?
   </h4>
-  </i>
-</a>
-
-
-<a href="#">
-
-  <i class="far fa-map 3x fa-3x"  id="tres">
-    <br>
-    <h4>
-      <p>CTAs Provincias</p>
-    </h4>
-
   </i>
 </a>
 
@@ -116,7 +104,11 @@
 @endauth
 <article class="noticiasIndex container-fluid">
 
-  <div class="busqueda row justify-content-center">
+  <div class="elementor-widget-container">
+    <h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
+  </div>
+  <br>
+  <div class="busqueda row justify-content-left">
         <div class="col-xs-12 col-sm-6 col-md-6 filtroBusqueda">
           <form class="" action="" method="get">
             <div class="row">
@@ -130,10 +122,6 @@
           </form>
 
         </div>
-
-      </div>
-      <div class="elementor-widget-container">
-        <h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
       </div>
       <div class="row" style="background: white">
 
