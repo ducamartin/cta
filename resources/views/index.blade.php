@@ -132,10 +132,10 @@
         </div>
 
       </div>
-        <div class="row" style="background: white">
-        <div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
-      	</div>
+      <div class="elementor-widget-container">
+        <h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
+      </div>
+      <div class="row" style="background: white">
 
 @foreach ($notas as $nota)
 <div class="row">
