@@ -7,9 +7,6 @@
     <div class="col bd-example justify-content-center info">
 
       <h1>CTA AUTONOMA</h1>
-      <h2>MISIONES</h2>
-      <br>
-      <br>
 
       <h6>------------------------------------------------------------------------------------------</h6>
       </div>
@@ -23,13 +20,13 @@
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
       <div class="info col-md-8">
-        <i class="far fas fa-users fa-5x" id="uno"><br>
+        <i class="far fas fa-users fa-3x" id="uno"><br>
   <h2>Comisión Directiva</h2>
   </i>
 
 </a>
 <a href="http://ctanacional.org/dev/que-es-la-cta/">
-  <i class="far fa-question-circle fa-5x" id="dos">
+  <i class="far fa-question-circle fa-3x" id="dos">
   <br>
   <h2>
     ¿Qué es la CTA?
@@ -40,7 +37,7 @@
 
 <a href="#">
 
-  <i class="far fa-map 5x fa-5x"  id="tres">
+  <i class="far fa-map 3x fa-3x"  id="tres">
     <br>
     <h2>
       <p>CTAs Provincias</p>
@@ -51,7 +48,7 @@
 
 
   <a href="{{'/afiliarse'}}">
-  <i class="far fa-check-circle fa-5x" id="cuatro">
+  <i class="far fa-check-circle fa-3x" id="cuatro">
   <br>
   <h2>
      Afiliarse
@@ -69,7 +66,10 @@
 <br>
 
 
-
+  
+    <div class="col bd-example justify-content-center info">
+      <h6>------------------------------------------------------------------------------------------</h6>
+      </div>
 
 <article class="container-fluid">
   <div class="row justify-content-center logos">
@@ -139,7 +139,7 @@
     <div class="card-body">
       <p class="precio text-center font-italic"> {{$nota->epigrafe}}</p>
        <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
-      <h5 class="card-title text-center text-uppercase">{{$nota->titulo}}</h5>
+      <h5 class="card-title text-center">{{$nota->titulo}}</h5>
 
         <p class="precio text-justify"> {{$nota->entrada}}</p>
 

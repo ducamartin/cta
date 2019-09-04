@@ -18,7 +18,7 @@
   <body>
 <div class="container-fluid registro " style="background-color: #B8B8B8;">
   <div class="justify-content-center">
-
+  <a href="{{'/'}}"> <button  type="submit" name="button" class="btn btn-primary">Volver a inicio</button></a>
 
  <form method="post" action="/nuevaNota" enctype="multipart/form-data">
    @csrf

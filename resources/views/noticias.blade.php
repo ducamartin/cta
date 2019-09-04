@@ -2,6 +2,8 @@
 @section('content')
 
 
+<div  class="notasID blockquote text-center">
+
 
 <blockquote class="notasID blockquote text-center">
   <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px" height="100px">
@@ -10,7 +12,7 @@
 <cite title="Source Title">{{$notas->epigrafe}}</cite>
     <div class="">
 
-      <h1 class="acheuno text-uppercase" style="color:black;">{{$notas->titulo}}</h1>
+      <h1 class="acheuno" style="color:black;">{{$notas->titulo}}</h1>
 
         <div class="row justify-content-center nosotros">
           <div class="info col-md-8">
@@ -35,6 +37,7 @@
 
 
 <blockquote class="notasID blockquote text-center">
+</div>
 
 @auth
 
