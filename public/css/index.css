@@ -16,11 +16,11 @@ h2{
 .elementor-widget-container {
   margin: 0px 0px -13px -9px;
   padding: 9px 5px 5px 13px;
-  background-color: transparent;
+  background-color: whitesmoke;
   background-image: linear-gradient(90deg, #680000 0%, rgba(160,0,0,0.02) 100%);
 }
 .elementor-widget-container  h3 {
-  color:black;
+  color:white;
 }
 
 

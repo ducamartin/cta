@@ -176,6 +176,13 @@
 
     </div>
   </div>
+
+
+  <div class="row">
+  Noticias
+  ACTA    
+</div>
+
 </div>
 
 
