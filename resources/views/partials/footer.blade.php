@@ -5,21 +5,10 @@
 
 
   <div class="row justify-content-center ">
-      <div class="col-md-4">
-        <div class="">
-
-        </div>
-        
-      </div>
+      
 
 
       <div class=" col-md-4">
-
-              <form class="fb">
-
-                
-              </form>
-
             </div>
             </div>
             <div class="logo">
