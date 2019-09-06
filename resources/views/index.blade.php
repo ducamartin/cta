@@ -33,22 +33,7 @@
 
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
-      <div class="info col-md-3">
-
-        
-        </a>
-        <a href="http://ctanacional.org/dev/que-es-la-cta/">
-          <i class="far fa-question-circle fa-3x" id="dos">
-          <br>
-          <h4>
-            ¿Qué es la CTA?
-          </h4>
-          </i>
-        </a>
-        <br>
-
-
-
+      <div class="info col-md-6">
         <a href="{{'/cd'}}">
         <i class="far fas fa-users fa-3x" id="uno">
              <h4>Comisión Directiva Provincial</h4>
@@ -187,4 +172,4 @@ ACTA
 
 
  @endsection
-</article>
+

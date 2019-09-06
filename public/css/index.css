@@ -9,6 +9,7 @@ body{
 }
 h4{
   font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
 }
 h2{
   font-family: 'Open Sans', sans-serif;
@@ -61,7 +62,7 @@ background-color: white;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: white !important;
+
 }
 
 a{

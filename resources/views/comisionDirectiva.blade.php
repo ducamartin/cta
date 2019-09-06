@@ -2,19 +2,23 @@
 @section('content')
 
 <div class="cd" style="background-color: white">
-
-
-<h1 class="text-center">COMISION DIRECTIVA PROVINCIAL</h1>
-
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                  
+                  <br>
+                  <h1 class="">COMISION DIRECTIVA PROVINCIAL</h1>
+                  
 
   <table class="table table-bordered table-dark">
-<!-- CABEZA -->
+    <!-- CABEZA -->
   <thead>
     <tr>
       <th scope="col">Secretaría</th>
       <th scope="col">Secretario</th>
       <th scope="col">Org. de Base</th>
-
+      
 
     </tr>
   </thead>
@@ -37,7 +41,7 @@
       <th scope="row">Secretario Gral Adj</th>
       <td>Leandro Javier Sánchez</td>
       <td>AGRUPACION</td>
-
+      
     </tr>
 </table>
 
@@ -61,7 +65,7 @@
     <td>Marcelo Fabían Grasiadei</td>
     <td>AGRUPACION</td>
 
-
+    
   </tr>
   <tr>
     <th scope="row">Secretario Gral Adj</th>
@@ -157,14 +161,14 @@
     <th scope="row">Secretario Gral</th>
     <td>Juan Andres Marquez</td>
     <td>AGRUPACION</td>
-
+    
 
   </tr>
   <tr>
     <th scope="row">Secretaria Gral Adj</th>
     <td>Paulina Leocadia Marczeski</td>
     <td>AGRUPACION</td>
-
+    
   </tr>
 
 </tbody>
@@ -180,7 +184,7 @@
     <th scope="col">Secretaría</th>
     <th scope="col">Secretario</th>
     <th scope="col">Org. de Base</th>
-
+    
 
   </tr>
 </thead>
@@ -191,13 +195,13 @@
     <td>Juan Andres Marquez</td>
     <td>AGRUPACION</td>
 
-
+    
   </tr>
   <tr>
     <th scope="row">Secretaria Gral Adj</th>
     <td>Paulina Leocadia Marczeski</td>
     <td>AGRUPACION</td>
-
+    
   </tr>
 
 </tbody>
@@ -222,13 +226,13 @@
     <td>Horacio Luis Dumañnski</td>
     <td>AGRUPACION</td>
 
-
+    
   </tr>
   <tr>
     <th scope="row">Secretaria Gral Adj</th>
     <td>Lucia Mabel Tarnouski</td>
     <td>AGRUPACION</td>
-
+    
   </tr>
 
 </tbody>
@@ -237,7 +241,7 @@
 
 <h2 class="text-center">Comisión Ejecutiva Local Puerto Rico </h2>
 <table class="table table-bordered table-dark">
-<!-- CABEZA -->
+  <!-- CABEZA -->
 <thead>
   <tr>
     <th scope="col">Secretaría</th>
@@ -254,13 +258,13 @@
     <td>Juana Rosa Paniagua</td>
     <td>AGRUPACION</td>
 
-
+    
   </tr>
   <tr>
     <th scope="row">Secretaria Gral Adj</th>
     <td>Patricia Isabel Martínez </td>
     <td>AGRUPACION</td>
-
+    
   </tr>
 
 </tbody>
@@ -286,7 +290,7 @@
     <td>Iris Magdalena Morinigo</td>
     <td>AGRUPACION</td>
 
-
+    
   </tr>
   <tr>
     <th scope="row">Secretaria Gral Adj</th>
@@ -300,7 +304,7 @@
 
 <h2 class="text-center">Comisión Ejecutiva Local Eldorado </h2>
 <table class="table table-bordered table-dark">
-<!-- CABEZA -->
+  <!-- CABEZA -->
 <thead>
   <tr>
     <th scope="col">Secretaría</th>
@@ -325,7 +329,7 @@
     <td>AGRUPACION</td>
 
   </tr>
-
+  
 </tbody>
 </table>
 
@@ -346,5 +350,9 @@
 
 
 
+</div>
+</div>
+</div>
+</div>
 </div>
 @endsection

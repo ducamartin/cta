@@ -11,7 +11,9 @@
             </li>
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">INSTITUCIONAL</a>
             <div class="dropdown-menu">
-            <a class="dropdown-item" href="{{'/cd'}}">Comisión Provincial</a>
+
+                   <a class="dropdown-item" href="http://ctanacional.org/dev/que-es-la-cta/">¿Qué es la CTA?</a>
+                   <a class="dropdown-item" href="{{'/cd'}}">Comisión Provincial</a>
                     <a class="dropdown-item" href="{{'/provincias'}}">Comisión Directiva</a>
                     <a class="dropdown-item" href="{{'/afiliarse'}}">AFILIARSE</a>
                     <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>

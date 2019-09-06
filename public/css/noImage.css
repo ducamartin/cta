@@ -159,29 +159,10 @@ i{
 
 /* contacto */
 
-
-.contacto{
-  background-color: #050B7A;
-}
-.contacto h2{
-  color: white;
+.containerc {
+  background-color: rgba(0, 0, 0, 0.9)!important;
 
 }
-.contactotext{
-
-  color: white;
-  font-size: 20px;
-
-
-}
-.contactotext a {
-text-decoration: none;
-color: white;
-}
-.contactomail {
-  color: white;
-}
-
 
 
 /* AFILIACION */
