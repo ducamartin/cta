@@ -29,26 +29,32 @@
 
 
 
-<a href="{{'/cd'}}">
+
 
   <article class="container-fluid">
     <div class="row justify-content-center nosotros">
-      <div class="info col-md-8">
-        <i class="far fas fa-users fa-3x" id="uno"><br>
-  <h4>Comisión Directiva Provincial</h4>
+      <div class="info col-md-3">
+
+        
+        </a>
+        <a href="http://ctanacional.org/dev/que-es-la-cta/">
+          <i class="far fa-question-circle fa-3x" id="dos">
+          <br>
+          <h4>
+            ¿Qué es la CTA?
+          </h4>
+          </i>
+        </a>
+        <br>
+
+
+
+        <a href="{{'/cd'}}">
+        <i class="far fas fa-users fa-3x" id="uno">
+             <h4>Comisión Directiva Provincial</h4>
   </i>
 
-</a>
-<a href="http://ctanacional.org/dev/que-es-la-cta/">
-  <i class="far fa-question-circle fa-3x" id="dos">
-  <br>
-  <h4>
-    ¿Qué es la CTA?
-  </h4>
-  </i>
-</a>
-
-
+<br>
   <a href="{{'/afiliarse'}}">
   <i class="far fa-check-circle fa-3x" id="cuatro">
   <br>
@@ -108,7 +114,6 @@
     <h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
   </div>
   <br>
-  <div class="row" style="background: white">
   <div class="busqueda row justify-content-left">
         <div class="col-xs-12 col-sm-6 col-md-6 filtroBusqueda">
           <form class="" action="" method="get">
@@ -124,6 +129,7 @@
 
         </div>
       </div>
+  <div class="row" style="background: white">
 
 @foreach ($notas as $nota)
 <div class="row">
