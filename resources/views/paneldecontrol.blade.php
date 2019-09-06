@@ -19,16 +19,16 @@
         <div class="col-md-8">
             <div class="card">
             <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Nota</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Borrar</th>
+                        <th scope="col">Publicar</th>
+                    </tr>
+                </thead>
                 @foreach ($notas as $nota)
-  <thead>
-    <tr>
-      <th scope="col">Nota</th>
-      <th scope="col">Titulo</th>
-      <th scope="col">Editar</th>
-      <th scope="col">Borrar</th>
-      <th scope="col">Publicar</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <th scope="row">{{$nota->id}}</th>
