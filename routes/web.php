@@ -38,6 +38,6 @@ Route::get('/', 'ViewController@indexNotas');
 
 // https://github.com/spatie/laravel-feed
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

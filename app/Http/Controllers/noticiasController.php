@@ -92,7 +92,7 @@ class noticiasController extends Controller
 
 public function control(){
   
-  $notas = notas::all();
+  $notas = notas::orderBy('id','desc')->paginate(10);
   return view ('paneldecontrol')
     ->with([
       'notas' => $notas]);
