@@ -40,7 +40,7 @@
 
 
 
-  <p class="" style="">
+  <p class="noticiasIndex" style="">
     <?php echo "{$notas->cuerpo}"; ?>
   </p>
 
