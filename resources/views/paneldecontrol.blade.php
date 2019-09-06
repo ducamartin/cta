@@ -2,9 +2,13 @@
 
 @section('content')
 
+
+
 <div class="container">
+    <a class="nav-link active" href="{{'/'}}">INICIO</a>
     <div class="row justify-content-right">
-            <div class="card">
+        <h5> PANEL DE CONTROL </h5> <br>
+        <div class="card">
             <a href="{{'/nuevaNota'}}">
 
 <input type="submit" name="Nueva Nota" value="Nueva Nota" class="btn btn-success">
