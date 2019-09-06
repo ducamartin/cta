@@ -24,21 +24,23 @@
         <div class="col-md-8">
             <div class="card">
 
-  <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px">
+ 
 
 <br>
 <cite title="Source Title">{{$notas->epigrafe}}</cite>
 
 
       <h1 class="acheuno" style="color:black;">{{$notas->titulo}}</h1>
-
-            <p class="entradaID" style="font-family:'Libre Franklin', sans-serif;">{{$notas->entrada}}</p>
-
-
+      <p class="entradaID" style="font-family:'Libre Franklin', sans-serif;">{{$notas->entrada}}</p>
+      <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px">
 
 
 
-  <p class="" style=" font-family: 'Libre Franklin', sans-serif text-left">
+
+
+
+
+  <p class="" style="">
     <?php echo "{$notas->cuerpo}"; ?>
   </p>
 

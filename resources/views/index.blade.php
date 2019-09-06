@@ -138,14 +138,13 @@
   <div class="card" style="width: 18rem;">
 
     <div class="card-body">
-      <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
-      <p class="precio text-center font-italic"> {{$nota->epigrafe}}</p>
-    <a href="notas/{{$nota->id}}">
-     <h5 class="card-title text-center">{{$nota->titulo}}</h5>
+      <a href="notas/{{$nota->id}}">
+      <h5 class="card-title text-center">{{$nota->titulo}}</h5>
     </a> 
+    <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
     
 
-        <p class="precio text-justify"> {{$nota->entrada}}</p>
+    {{-- <p class="precio text-justify"> {{$nota->entrada}}</p>  --}}
 
 
 
