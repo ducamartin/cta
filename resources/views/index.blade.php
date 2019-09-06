@@ -108,6 +108,7 @@
     <h3 class="elementor-heading-title elementor-size-default">Noticias</h3>	
   </div>
   <br>
+  <div class="row" style="background: white">
   <div class="busqueda row justify-content-left">
         <div class="col-xs-12 col-sm-6 col-md-6 filtroBusqueda">
           <form class="" action="" method="get">
@@ -123,7 +124,6 @@
 
         </div>
       </div>
-      <div class="row" style="background: white">
 
 @foreach ($notas as $nota)
 <div class="row">
@@ -166,17 +166,17 @@
   </div>
 
 
-  <div class="row">
-  Noticias
-  ACTA    
-</div>
-
+  
 </div>
 
 
 @endforeach
 {{ $notas->links() }}
 
+<div class="row">
+Noticias
+ACTA    
+</div>
 
 </div>
 

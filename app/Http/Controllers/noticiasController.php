@@ -90,7 +90,10 @@ class noticiasController extends Controller
           }
 
 
-
+public function control(){
+  
+  return view ('paneldecontrol');
+}
 
 
 

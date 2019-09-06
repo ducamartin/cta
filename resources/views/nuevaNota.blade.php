@@ -20,6 +20,10 @@
 <div class="container-fluid registro " style="background-color: #B8B8B8;">
   <div class="justify-content-center">
   <a href="{{'/'}}"> <button  type="submit" name="button" class="btn btn-primary">Volver a inicio</button></a>
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
 
  <form method="post" action="/nuevaNota" enctype="multipart/form-data">
    @csrf
@@ -76,6 +80,12 @@
  </form>
 </div>
 
+
+
+        </div>
+        </div>
+    </div>
+</div>
     
   </body>
 	</html>

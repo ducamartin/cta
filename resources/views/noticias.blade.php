@@ -19,41 +19,32 @@
       @endauth
 <div  class="notasID blockquote text-center">
 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
 
-<blockquote class="notasID blockquote text-center">
   <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px" height="100px">
 
 <br>
 <cite title="Source Title">{{$notas->epigrafe}}</cite>
-    <div class="">
+
 
       <h1 class="acheuno" style="color:black;">{{$notas->titulo}}</h1>
 
-        <div class="row justify-content-center nosotros">
-          <div class="info col-md-8">
-
-            <p class="entradaID text-justify" style="font-family:'Libre Franklin', sans-serif;">{{$notas->entrada}}</p>
-</div>
-</div>
-</blockquote>
+            <p class="entradaID" style="font-family:'Libre Franklin', sans-serif;">{{$notas->entrada}}</p>
 
 
 
-<blockquote>
 
-<div class=" info col-md-8">
 
   <p class="">
     <?php echo "{$notas->cuerpo}"; ?>
   </p>
+
+
+
+          </div>
+      </div>
+    </div>
 </div>
-</blockquote>
-
-
-
-<blockquote class="notasID blockquote text-center">
-</div>
-
-
-
-</blockquote>
