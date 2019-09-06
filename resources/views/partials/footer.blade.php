@@ -1,5 +1,3 @@
-
-
 <footer>
   <div class="footer col bd-example justify-content-center">
   <div class=" col-md-16">

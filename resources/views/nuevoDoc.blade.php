@@ -1,7 +1,7 @@
 @extends('layouts.notfooter')
 @section('content')
 
-<div class="container-fluid registro " style="background-color: #B8B8B8;">
+<div class="container-fluid registro " style="background-color: rgb(249, 248, 247)">
   <div class="justify-content-center">
 
 

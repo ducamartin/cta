@@ -203,9 +203,7 @@ color: white;
 
 /* NOTAS */
 
-.card-img-top{
-  width: 10%;
-}
+
 
 .acheuno h1{
   color: black;
@@ -213,7 +211,6 @@ color: white;
  pre{
 
   overflow:visible;
-  text-align: center;
   content: normal;
 
 }

@@ -1,5 +1,4 @@
-
-    <header>
+<header>
       <nav class="menu navbar navbar-expand-lg navbar-light fixed-top"  style="background-color: black" >
         <a class="nav-link" href="{{'/'}}"> <img src="imagenes/sol-icono.png" alt="CTA Misiones" width="50px" height="50px">CTA AUTÓNOMA - MISIONES</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >

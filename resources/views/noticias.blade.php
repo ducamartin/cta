@@ -24,7 +24,7 @@
         <div class="col-md-8">
             <div class="card">
 
-  <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px" height="100px">
+  <img src="/storage/{{$notas->img}}" class="card-img-top" alt="..." width="100px">
 
 <br>
 <cite title="Source Title">{{$notas->epigrafe}}</cite>
@@ -38,7 +38,7 @@
 
 
 
-  <p class="">
+  <p class="" style=" font-family: 'Libre Franklin', sans-serif text-left">
     <?php echo "{$notas->cuerpo}"; ?>
   </p>
 

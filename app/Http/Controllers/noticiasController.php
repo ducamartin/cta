@@ -92,19 +92,10 @@ class noticiasController extends Controller
 
 public function control(){
   
-  return view ('paneldecontrol');
-}
-
-
-
-
-
-
-
-
-
-
-
-
+  $notas = notas::all();
+  return view ('paneldecontrol')
+    ->with([
+      'notas' => $notas]);
 
     }
+}
