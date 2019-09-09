@@ -200,6 +200,10 @@ i{
 .entradaID p{
   font-family: 'Libre Franklin', sans-serif!important;
 }
+.noticiasIndex p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
 
 /* media query */
 @media (max-width: 767px) {

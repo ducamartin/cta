@@ -2,17 +2,13 @@
 
 @section('content')
 
-
-
+<a href="{{'/'}}"> <button  type="submit" name="button" class="btn btn-primary">Volver a inicio</button></a>
+  <a href="{{'/nuevaNota'}}"> <button  type="submit" name="button" class="btn btn-success">Nueva Nota</button></a>
 <div class="container">
     <a class="nav-link active" href="{{'/'}}">INICIO</a>
     <div class="row justify-content-right">
         <h5> PANEL DE CONTROL </h5> <br>
         <div class="card">
-            <a href="{{'/nuevaNota'}}">
-
-<input type="submit" name="Nueva Nota" value="Nueva Nota" class="btn btn-success">
-</a>
             </div>
         </div>
 

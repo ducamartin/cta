@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -11,15 +13,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Franklin|Montserrat|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/index.css">
+    
   
 
 
   </head>
   <body>
-<div class="container-fluid registro " style="background-color: #B8B8B8;">
+<div class="container-fluid registro " >
   <div class="justify-content-center">
   <a href="{{'/'}}"> <button  type="submit" name="button" class="btn btn-primary">Volver a inicio</button></a>
+  <a href="{{'/paneldecontrol'}}"> <button  type="submit" name="button" class="btn btn-success">Panel de control</button></a>
+  
   <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -52,7 +56,6 @@
      @error('entrada')
      <div class="alert alert-danger">{{ $message }}</div>
      @enderror
-   </div>
 
 
  </div>
@@ -69,8 +72,7 @@
 
 <!-- IMAGEN -->
    <div  class="form-group">
-   <label for="imgNota">Imagen de la noticia</label>
-   Agregar Imagen<input class="form-control" type="file" name="imgNota" value="">
+   <label for="imgNota">Imagen de la noticia</label><input class="form-control" type="file" name="imgNota" value="">
    @error('imgProduct')
    <div class="alert alert-danger">{{ $message }}</div>
    @enderror
@@ -78,14 +80,16 @@
    <button type="submit" name="button" class="btn btn-primary">Subir Nota</button>
 
  </form>
+   </div>
 </div>
 
 
 
-        </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 </div>
     
-  </body>
-	</html>
+  </body>	
+  </html>
+  @endsection
