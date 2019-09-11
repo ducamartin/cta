@@ -125,7 +125,7 @@
 
     <div class="card-body">
       <a href="notas/{{$nota->id}}">
-      <h5 class="card-title text-center">{{$nota->titulo}}</h5>
+      <h5 class="card-title text-justify">{{$nota->titulo}}</h5>
     </a> 
     <img src="/storage/{{$nota->img}}" class="card-img-top" alt="...">
     

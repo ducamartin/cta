@@ -1,5 +1,4 @@
-@extends('layouts.notheadfoot')
-
+@extends('layouts.app')
 @section('content')
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -10,12 +9,18 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Franklin|Montserrat|PT+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/noImage.css">
 
 
-  <section class="principal">
-       <article class="editNotas" id="editNotas">
-           <div class="noticiasAeditar">
+
+<div class="container-fluid registro " >
+  <div class="justify-content-center">
+  <a href="{{'/'}}"> <button  type="submit" name="button" class="btn btn-primary">Volver a inicio</button></a>
+  <a href="{{'/paneldecontrol'}}"> <button  type="submit" name="button" class="btn btn-success">Panel de control</button></a>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
 
              <form method="post" action="" enctype="multipart/form-data">
                @csrf
@@ -42,16 +47,18 @@
 
                 <div  class="form-group">
                   <label for="entrada">Entrada</label>
-                  <textarea class="form-control" name="entrada" id="entrada"  value="{{ old('entrada',$notes->entrada)}}" rows="8" cols="50"></textarea>
+                  
+                <textarea class="form-control" name="cuerpo" id="" cols="8" rows="10">{{old('entrada',$notes->entrada)}}</textarea>
                   @error('entrada')
                   <div class="alert alert-danger">{{ $message }}</div>
                   @enderror
                 </div>
 
 
+
                 <div  class="form-group">
                     <label for="cuerpo">Cuerpo</label>
-                    <textarea class="form-control" name="cuerpo"  value="{{old('cuerpo',$notes->cuerpo)}}" rows="8" cols="80"></textarea>
+                    <textarea class="form-control" name="cuerpo" id="" cols="30" rows="10">{{old('cuerpo',$notes->cuerpo)}}</textarea>
                     @error('cuerpo')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -70,7 +77,15 @@
                 </div>
                 <button type="submit" name="button" class="btn btn-primary">Guardar</button>
                 </div>
+                </div>
+</div>
 
+
+
+</div>
+</div>
+</div>
+</div>
 
             </form>
           </div>

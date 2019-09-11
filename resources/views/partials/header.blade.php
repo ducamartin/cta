@@ -23,11 +23,7 @@
                 </li>
               </ul>
               @auth
-<a href="{{'/nuevaNota'}}">
-
-  <input type="submit" name="Nueva Nota" value="Nueva Nota" class="btn btn-primary">
-</a>
-<a href="{{'/paneldecontrol'}}"> <button  type="submit" name="button" class="btn btn-success">Panel de control</button></a>
+<a href="{{'/paneldecontrol'}}"> <button  type="submit" name="button" class="btn btn-success">Panel</button></a>
 @endauth
 
             </li>

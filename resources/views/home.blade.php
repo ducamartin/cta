@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+
+                <a href="{{'/'}}"> <button  type="submit" name="button" class="btn btn-primary">Volver a inicio</button></a>
+                <a href="{{'/paneldecontrol'}}"> <button  type="submit" name="button" class="btn btn-success">Panel</button></a>
                 </div>
             </div>
         </div>

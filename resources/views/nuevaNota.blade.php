@@ -4,11 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <title>Subir Nota</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+  <!-- include libraries(jQuery, bootstrap) -->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+<!-- include summernote css/js -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Franklin|Montserrat|PT+Sans&display=swap" rel="stylesheet">
@@ -52,7 +55,7 @@
 
    <div  class="form-group ">
      <label for="entrada">Copete</label>
-     <textarea class="form-control" name="entrada" id="entrada"  value="{{ old('entrada') }}" rows="8" cols="50"></textarea>
+     <textarea id="summernote" class="form-control" name="entrada" id="entrada"  value="{{ old('entrada') }}" rows="8" cols="50"></textarea>
      @error('entrada')
      <div class="alert alert-danger">{{ $message }}</div>
      @enderror
@@ -62,7 +65,7 @@
  <label for="cuerpo">Cuerpo</label>
 
 
-     <textarea class="form-control" name="cuerpo" value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
+     <textarea id="summernote" class="form-control" name="cuerpo" value="{{ old('cuerpo') }}" rows="8" cols="80"></textarea>
      @error('cuerpo')
      <div class="alert alert-danger">{{ $message }}</div>
      @enderror
@@ -89,7 +92,7 @@
 </div>
 </div>
 </div>
-    
+
   </body>	
   </html>
   @endsection
