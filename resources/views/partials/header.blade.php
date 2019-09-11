@@ -15,11 +15,11 @@
                    <a class="dropdown-item" href="http://ctanacional.org/dev/que-es-la-cta/">¿Qué es la CTA?</a>
                    <a class="dropdown-item" href="{{'/cd'}}">Comisión Provincial</a>
                     <a class="dropdown-item" href="{{'/provincias'}}">Comisión Directiva</a>
-                    <a class="dropdown-item" href="{{'/afiliarse'}}">AFILIARSE</a>
+                    <a class="dropdown-item" href="{{'/afiliarse'}}">Afiliarse</a>
                     <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>
                         </div>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{'/contacto'}}">CONTACTO</a>
+                  <a class="nav-link" href="{{'/contacto'}}">Contacto</a>
                 </li>
               </ul>
 
