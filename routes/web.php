@@ -5,23 +5,23 @@
 
 Route::get('/documentos','documentosController@ver');
 
-Route::post('/nuevoDoc', 'documentosController@agregar');
-Route::get('/nuevoDoc', 'documentosController@vista');
+Route::post('/nuevoDoc', 'documentosController@agregar')->middleware('auth');
+Route::get('/nuevoDoc', 'documentosController@vista')->middleware('auth');
 
 
 
 
 // noticias
-Route::get('/paneldecontrol','noticiasController@control');
+Route::get('/paneldecontrol','noticiasController@control')->middleware('auth');
 Route::get('/noticias','noticiasController@ver');
 
-Route::post('/borrarNota','notasController@borrar');
+Route::post('/borrarNota','notasController@borrar')->middleware('auth');
 
-Route::post('/notas/editar/{id}','noticiasController@update');
-Route::get('/notas/editar/{id}','noticiasController@edit');
+Route::post('/notas/editar/{id}','noticiasController@update')->middleware('auth');
+Route::get('/notas/editar/{id}','noticiasController@edit')->middleware('auth');
 
-Route::post('/nuevaNota','notasController@agregar');
-Route::get('/nuevaNota','notasController@vista');
+Route::post('/nuevaNota','notasController@agregar')->middleware('auth');
+Route::get('/nuevaNota','notasController@vista')->middleware('auth');
 
 Route::get('/notas/{id}','noticiasController@show');
 

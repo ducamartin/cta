@@ -16,12 +16,19 @@
                    <a class="dropdown-item" href="{{'/cd'}}">Comisión Provincial</a>
                     <a class="dropdown-item" href="{{'/provincias'}}">Comisión Directiva</a>
                     <a class="dropdown-item" href="{{'/afiliarse'}}">Afiliarse</a>
-                    <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">ELECCIONES 2018</a>
+                    <a class="dropdown-item" href="http://ctanacional.org/dev/category/acciones/elecciones-cta-2018/">Elecciones 2018</a>
                         </div>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{'/contacto'}}">Contacto</a>
+                  <a class="nav-link" href="{{'/contacto'}}">CONTACTO</a>
                 </li>
               </ul>
+              @auth
+<a href="{{'/nuevaNota'}}">
+
+  <input type="submit" name="Nueva Nota" value="Nueva Nota" class="btn btn-primary">
+</a>
+<a href="{{'/paneldecontrol'}}"> <button  type="submit" name="button" class="btn btn-success">Panel de control</button></a>
+@endauth
 
             </li>
            <a href="https://es-la.facebook.com/CtaMisiones/">
